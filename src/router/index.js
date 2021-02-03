@@ -24,6 +24,11 @@ export default new Router({
       path:"/message",
       component:resolve=>require(['../pages/message.vue'],resolve),
       name:"message"
+    },
+    {
+      path:"/friends",
+      component:resolve=>require(['../pages/friends.vue'],resolve),
+      name:"friends"
     }
   ]
 })

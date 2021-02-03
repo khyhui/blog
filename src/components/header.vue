@@ -11,6 +11,7 @@
                             active-text-color="#fff"
                             active-background-color="#000"
                             router
+                            :default-active='$route.path'
                         >
                             <el-menu-item index="/home"> <i class="iconfont icon-home"></i>首页</el-menu-item>
                             <el-submenu index="2">
@@ -26,7 +27,7 @@
                                 <el-menu-item index="3-3">选项3</el-menu-item>
                             </el-submenu>
                             <el-menu-item index="4"><i class="iconfont icon-phonebill"></i>赞赏</el-menu-item>
-                            <el-menu-item index="5"><i class="iconfont icon-xiaohuoban"></i>伙伴</el-menu-item>
+                            <el-menu-item index="/friends"><i class="iconfont icon-xiaohuoban"></i>伙伴</el-menu-item>
                             <el-menu-item index="/message"><i class="iconfont icon--liuyanban"></i>留言板</el-menu-item>
                             <el-menu-item index="/about"><i class="iconfont icon-guanyu"></i>关于</el-menu-item>
                           </el-menu>
@@ -79,9 +80,6 @@
     margin: 0 auto;
     padding: 0 10px;
 }
-.el-menu-item.is-active {
-   background-color: rgb(19, 69, 129) !important;
-}
 .top .navigation .container .pc .el-menu-demo {
     background: transparent;
     border-bottom: none!important;
@@ -95,19 +93,19 @@
     color: #fff;
 }
   .top .navigation .container .pc .el-menu-demo .el-menu-item:hover,.top .navigation .container .pc .el-menu-demo .el-submenu__title:hover{
-    background-color:rgb(63,59,93)!important;
+    background-color:#48456C!important;
 }
  .top .navigation .container .pc .el-menu-demo .el-menu-item.is-active{
-    background-color:  rgb(63,59,93)!important;
+    background-color:  #48456C!important;
 }
 .el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title{
-    background-color:  rgb(63,59,93)!important; 
+    background-color:  #48456C!important; 
 }
 .el-menu--horizontal .el-menu--popup-bottom-start{
-    background-color:  rgb(63,59,93)!important; 
+    background-color:  #48456C!important; 
 }
 .el-menu--horizontal .el-menu--popup-bottom-start .el-menu-item:hover{
-    background-color:  rgb(99, 96, 168) !important;
+    background-color:  #48456C !important;
 }
 .top .headImg img{
     width:100%;
